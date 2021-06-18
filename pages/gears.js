@@ -12,7 +12,7 @@ function Uses({ og }) {
         <div className="uses-intro">
           I often get asked about what's my setup as well as what
           I use to share all the tips I usually post on {' '}
-          <a href="https://twitter.com/telmo" target="_blank" rel="noopener noreferrer nofollow">
+          <a href="https://twitter.com/nav_devl" target="_blank" rel="noopener noreferrer nofollow">
             Twitter
           </a>, {' '}
           so here it is.
@@ -39,8 +39,8 @@ Uses.getInitialProps = () => {
   return {
     data: {
       og: {
-        description: "What Telmo uses on a daily basis.",
-        image: "https://telmo.im/og/uses.png"
+        description: "What Naveen Honest Raj uses on a daily basis.",
+        image: "https://naveenhonestraj.in/og/uses.png"
       }
     }
   }

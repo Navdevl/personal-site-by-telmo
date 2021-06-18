@@ -1,80 +1,55 @@
-import React from 'react'
-import matter from 'gray-matter'
-import Link from 'next/link'
-import Head from 'next/head'
+import React, { useState, useEffect } from 'react'
 import { Row, Col } from 'react-flexbox-grid'
+import dynamic from 'next/dynamic'
 
 import Layout from '../components/Layout'
+import Icon from '../components/Icon'
+import { PRESENT } from '../constants/Stack'
 
-function formatDate(date) {
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  const today  = new Date(date);
-
-  return today.toLocaleDateString("en-US", options);
-}
-
-function freshWriting(date) {
-  const writingDate = new Date(date).getTime()
-  const today = new Date().getTime()
-
-  return today - writingDate < (60 * 60 * 1000 * 24 * 2) // 2 days old
-}
-
-function Homepage({ writings }) {
+function About() {
   return (
     <>
-      <Layout isHomepage>
-        <Row>
-          {writings.map(({ document, slug }) => {
-            const { data: { title, date } } = document
+      <Layout secondaryPage>
+        <div style={{ marginTop: 50 }}>
+          <h1 className="main-h1 about-h1">
+            Hey, I'm Naveen Honest Raj.
+          </h1>
 
-            return (
-              <Col md={6} key={slug}>
-                <div className="writing-row" key={title}>
-                  <Row>
-                    <Col md={12}>
-                      <div className="writing-date">{formatDate(date)}</div>
-                    </Col>
-
-                    <Col md={12}>
-                      <Link href="/writings/[slug]" as={`/writings/${slug}`}>
-                        <a>
-                          {freshWriting(date) && <div className="pulse" />}
-                          <span className="writing-title">{title}</span>
-                        </a>
-                      </Link>
-                    </Col>
-                  </Row>
-                </div>
+          <div className="about-intro">
+            <Row>
+              <Col md={12}>
+                Coding was not something I learnt to do or was chosen out of the options I had, it was something I was comfortable doing. More than comfort there was one quality that moulded to be the person I am today, it was thirst to be better.
+                <br></br><br></br>
+                An introvert, confined to close circles, brainy, these are some of the words that became my identity during my school and college days. I was good in adapting to a coding language and picked up the technologies fast. I spent most of my leisure exploring the internet and learning whatever I could. I like reading and gaining knowledge from the broad world of internet in my personal space away from the crowd and their noise, but for my music and my beloved machine.
+                <br></br><br></br>
+                The people I looked upto inspired me in a lot of ways to become the better human I am today. They were the ones who guided me to pursue a career in what I loved doing most, coding!
               </Col>
-            )
-          })}
-        </Row>
+            </Row>
+
+            <hr />
+
+            <h3>What I've worked with so far</h3>
+
+            <Row style={{ marginTop: 30 }}>
+              {PRESENT.map(s => (
+                <Col md={2} xs={4} key={s} style={{ textAlign: 'center', marginBottom: 40 }}>
+                  <Icon type={s} />
+                  <div className="stack-name">{s}</div>
+                </Col>
+              ))}
+            </Row>
+
+            <hr />
+
+            Follow me on {' '}
+            <a href="https://twitter.com/nav_devl" target="_blank" rel="noopener noreferrer nofollow">
+              Twitter
+            </a>. That's where I usually hangout.
+          </div>
+        </div>
       </Layout>
     </>
   )
 }
 
-Homepage.getInitialProps = async(context) => {
-  const writings = (context => {
-    const keys = context.keys()
-    const values = keys.map(context)
-    const data = keys.map((key, index) => {
-      const slug = key
-        .replace(/^.*[\\\/]/, '')
-        .split('.')
-        .slice(0, -1)
-        .join('.')
-      const value = values[index]
-      const document = matter(value.default)
-      return { document, slug }
-    })
-
-    return data.slice().sort((a, b) => new Date(b.document.data.date) - new Date(a.document.data.date))
-  })(require.context('../writings', true, /\.md$/))
-
-  return {
-    writings,
-  }
-}
-export default Homepage
+export default About

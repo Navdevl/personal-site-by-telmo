@@ -11,19 +11,19 @@ import BlackLivesMatter from './BlackLivesMatter'
 const menu = [
   {
     path: '/',
-    name: '0. start',
+    name: 'About me',
   },
   {
-    path: '/about',
-    name: '1. about',
+    path: '/blog',
+    name: 'Blog',
   },
   {
-    path: '/uses',
-    name: '2. uses',
+    path: '/gears',
+    name: 'Gears',
   },
 ]
 const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2']
-const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/telmo&w=150`
+const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/nav_devl&w=150`
 const SALUTS = [
   'Hey you.',
   'Welcome.',
@@ -90,7 +90,6 @@ function Layout({ children, isHomepage, secondaryPage }) {
 
   return (
     <>
-      <BlackLivesMatter />
 
       <div className="top-menu">
         <Row>
@@ -132,7 +131,7 @@ function Layout({ children, isHomepage, secondaryPage }) {
                 </h1>
 
                 <p className="entry-description">
-                  I write about code, design & life. — Telmo
+                  Engineer + product enthusiast who binge watches TV shows during coffee break.
                 </p>
               </div>
             )}
@@ -165,7 +164,8 @@ function Layout({ children, isHomepage, secondaryPage }) {
       </Grid>
 
       <footer>
-        <div>No tracking. No ads. Happy {currentDayName()}!</div>
+        <div>No tracking. No ads. Happy {currentDayName()}! 💙</div>
+        <div>Credits to <a href="https://twitter.com/telmo">Telmo</a> for the code 🎉</div>
         <div>&copy; {new Date().getFullYear()}</div>
       </footer>
     </>

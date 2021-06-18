@@ -25,7 +25,7 @@
     "react-flexbox-grid": "^2.1.2",
     "react-markdown": "^4.3.1",
     "react-scroll-progress-bar": "^1.1.12",
-    "react-syntax-highlighter": "^12.2.1",
+    "react-syntax-highlighter": "^13.2.1",
     "react-text-transition": "^1.0.2",
     "reading-time": "^1.2.0",
     "simple-icons": "^2.9.0"
