@@ -3,7 +3,7 @@ title: To all those under appreciated successful people
 date: "2020-05-02T05:00:00.00Z"
 og:
   description: 'Elon Musk, Jeff Bezos, Warren Buffett and a list of entrepreneurs are tagged as "successful" because of their lifestyle, consistency, persistence and etcetera etcetera.'
-  image: "https://naveenhonestraj.in/media/successful-people.jpg"
+  image: "https://naveenhonestraj.in/static/media/successful-people.jpg"
 author:
   twitter: "nav_devl"
   name: "Naveen Honest Raj"

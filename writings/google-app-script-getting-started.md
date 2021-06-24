@@ -3,7 +3,7 @@ title: Google Apps Script - Getting started?
 date: "2019-01-08T23:46:37.121Z"
 og:
   description: "Apps Script is a scripting platform developed by Google for light-weight application development in the G Suite platform. Google Apps Script was initially developed by Mike Harm as a side project whilst working as a developer on Google Sheets."
-  image: "https://naveenhonestraj.in/media/google-sheets-addon.png"
+  image: "https://naveenhonestraj.in/static/media/google-sheets-addon.png"
 author:
   twitter: "nav_devl"
   name: "Naveen Honest Raj"

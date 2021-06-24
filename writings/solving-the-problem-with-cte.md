@@ -3,7 +3,7 @@ title: "Solving the problem using Common Table Expressions"
 date: "2021-02-21"
 og:
   description: "Quick blog around the concept of Common Table Expressions and how it can be leveraged to be used for daily normal usecases."
-  image: "https://naveenhonestraj.in/media/common-table-expression.png"
+  image: "https://naveenhonestraj.in/static/media/common-table-expression.png"
 author:
   twitter: "nav_devl"
   name: "Naveen Honest Raj"
