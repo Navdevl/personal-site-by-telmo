@@ -3,7 +3,7 @@ title: Creating an Incoming only email server + send data to an application serv
 date: "2020-05-28T00:00:00.00Z"
 og:
   description: "Tried to setup my own email server with random blog reads and slack chats. Winded up with a secureless incoming email server and here how I did it."
-  image: "/media/postfix.png"
+  image: "https://naveenhonestraj.in/media/postfix.png"
 author:
   twitter: "nav_devl"
   name: "Naveen Honest Raj"

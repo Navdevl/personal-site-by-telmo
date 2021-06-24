@@ -6,7 +6,7 @@ og:
   got this over passion about making moral films that conveys meaningful patriotism
   towards the country or standing up against a huge-list-of-discriminations, or maybe
   pick topics around patriarchy and so on"
-  image: "/media/movies-netflix-min.jpg"
+  image: "https://naveenhonestraj.in/media/movies-netflix-min.jpg"
 author:
   twitter: "nav_devl"
   name: "Naveen Honest Raj"

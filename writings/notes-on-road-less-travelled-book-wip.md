@@ -5,7 +5,7 @@ og:
   description: "Road Less Travelled is a wonderful book by M Scott Peck. This post is
   just a quick notes on whatever that I loved in these books and this is just total
   random thing I penned down while reading the book. No judgements."
-  image: "/media/road-less-travelled.jpg"
+  image: "https://naveenhonestraj.in/media/road-less-travelled.jpg"
 author:
   twitter: "nav_devl"
   name: "Naveen Honest Raj"

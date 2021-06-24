@@ -3,7 +3,7 @@ title: 'Just a random thought #1'
 date: "2020-05-02T05:00:00.00Z"
 og:
   description: 'I am reading "Sapiens" by Yuval Noah Harari. While reading a specific paragraph, I had this weird thought. This is completely random, so no judgements.'
-  image: "/media/homo-sapiens.jpeg"
+  image: "https://naveenhonestraj.in/media/homo-sapiens.jpeg"
 author:
   twitter: "nav_devl"
   name: "Naveen Honest Raj"
