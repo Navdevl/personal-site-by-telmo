@@ -116,8 +116,8 @@ Like I said earlier, we aren't writing this with any security installed, so we c
 
 Few things you might have to edit is,
 
-1. Adding your instance ip to the **mynetworks**
-2. Adding **transport_maps** to transport mail to a postfix pipe.
+- Adding your instance ip to the **mynetworks**
+- Adding **transport_maps** to transport mail to a postfix pipe.
 
 ### What is a catch-all email?
 

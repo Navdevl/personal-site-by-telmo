@@ -41,9 +41,9 @@ function Blogpage({ writings }) {
                         <a>
                           {freshWriting(date) && <div className="pulse" />}
                           <span className="writing-title">{title}</span>
-                          <span className="writing-description">{og.description}</span>
                         </a>
                       </Link>
+                      <span className="writing-description">{og.description}</span>
                     </Col>
                   </Row>
                 </div>

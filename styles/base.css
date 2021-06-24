@@ -10,6 +10,7 @@
   --hr-color: #ddd;
   --article-text-color: #444;
   --uses-secondary-color: #bbb;
+  --article-link-color: #b4e7f8;
 }
 
 [data-theme="dark"] {
@@ -20,6 +21,7 @@
   --background-color: #010101;
   --hr-color: #333;
   --article-text-color: #eee;
+  --article-link-color: #0070f4;
   /* --uses-secondary-color: #bbb; */
 }
 
@@ -161,7 +163,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .writing-row a:hover {
-  opacity: .2;
+  /*opacity: .2;*/
+  text-decoration: underline;
 }
 
 .writing-row .writing-date {
@@ -267,11 +270,17 @@ hr:before {
   color: var(--hr-color);
 }
 
+/* Link Style 1 */
 .writing-container a {
-  color: var(--text-color);
-  text-decoration: underline;
-  text-decoration-color: var(--primary-color);
-  text-decoration-thickness: 4px;
+    border-bottom: .05em solid var(--primary-color);
+    box-shadow: inset 0 -0.05em 0 var(--article-link-color);
+    color: inherit;
+    transition: background-color .25s cubic-bezier(.33, .66, .66, 1);
+    text-decoration: none;
+}
+
+.writing-container a:hover, .writing-container a:focus, .writing-container a:active {
+    background-color: var(--article-link-color);
 }
 
 .back-button {
