@@ -28,8 +28,8 @@ There's always a recipe to any magic that has been established in the history. C
 
 Assuming, by now, you have bought your domain and also have your instance started. So, now we have two elements to configure in the domain's DNS.
 
-1. MX Record
-2. A Record
+- MX Record
+- A Record
 
 As per wiki, A mail exchanger **record** (**MX record**) specifies the mail server responsible for accepting email messages on behalf of a domain name. It is a resource **record** in the Domain Name System (DNS).
 
@@ -60,19 +60,27 @@ As per wiki, **_Postfix_** is a free and open-source [mail transfer agent (MTA)]
 Now, let us roll our sleeves and start our work.
 
  1. First ssh into your instance. Once you are in, make sure to update it by running `apt-get update`
+
  2. Change your hostname value because this will be very much needed in a lot of places. Run `vi /etc/hostname/` and change the value to **mailer** and save it.
+
  3. Verify it by typing `hostname -f` in the command line to check your FQQN. Mine will display the following  
     _root@mailer:\~# hostname -f_
 
     _mailer.slooshers.xyz_
  4. Then install postfix by running `apt-get install postfix`
+
  5. Postfix installation will ask you to go through a wizard workflow to setup.
 
     ![](../../static/media/screenshot-2020-05-28-at-11-20-07-pm.png)
+
  6. Choose **Internet Site**
+
  7. Now, verify if your hostname if properly filled as per the FQDN.
+
  8. For **Root and postmaster mail recipient,** just for now you can leave this blank
+
  9. In the other destinations make sure both mailer.yourdomain.com and yourdomain.com exists. Because this is very much needed as per our story line.
+ 
 10. Other things, you can just go with default.
 
 If any of the above steps didn't occur to you, you can run `dpkg-reconfigure postfix` and reconfigure again. Don't sweat.

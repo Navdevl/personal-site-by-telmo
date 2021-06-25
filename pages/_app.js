@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
         
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:site" content="@nav_devl" />
-        <meta property="twitter:title" content="Creating an Incoming only email server + send data to an application server">
+        <meta property="twitter:title" content="Creating an Incoming only email server + send data to an application server" />
         <meta property="twitter:description" content={og ? og.description : `Naveen Honest Raj K is a backend engineer from India, who loves to talk about code, life and movies. Most other times, he just stares at the sky and hum to an old song.`} />
         <meta property="twitter:image" content={og ? og.image : `https://naveenhonestraj.in/og/default.png`} />
 

@@ -229,11 +229,15 @@ p {
   list-style: circle;
 }
 
-.writing-container ul li {
+.writing-container ul li{
   padding: 4px 0;
-  line-height: 1.8em;
-  font-size: 20px;
+  line-height: 1.5em;
+  font-size: 17px;
   color: var(--article-text-color);
+}
+.writing-container li p {
+  line-height: 1.5em;
+  font-size: 17px;
 }
 
 .writing-container blockquote {
