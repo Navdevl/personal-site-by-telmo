@@ -16,9 +16,9 @@ function MyApp({ Component, pageProps }) {
         <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <meta property="og:title" content={title || `Naveen Honest Raj | Ruby on Rails Dev | Personal Site`} />
-        <meta property="og:site_name" content="Naveen Honest Raj | Ruby on Rails Dev | Personal Site" />
-        <meta property="og:description" content={og ? og.description : `Writing about the learnings I come across in this short life.`} />
+        <meta property="og:title" content={title || `Naveen Honest Raj | Backend Engineer - Specialized in Ruby on Rails | Writes about code, life and movies`} />
+        <meta property="og:site_name" content="Naveen Honest Raj | Backend Engineer - Specialized in Ruby on Rails" />
+        <meta property="og:description" content={og ? og.description : `Naveen Honest Raj K is a backend engineer from India, who loves to talk about code, life and movies. Most other times, he just stares at the sky and hum to an old song.`} />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@nav_devl" />
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
 
         <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 
-        <title>{title || `Naveen Honest Raj | Ruby on Rails Dev | Personal Site`}</title>
+        <title>{title || `Naveen Honest Raj | Backend Engineer - Specialized in Ruby on Rails | Writes about code, life and movies`}</title>
       </Head>
 
       <Component {...pageProps} />

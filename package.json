@@ -7,11 +7,13 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "build:static": "next build && next export"
+    "build:static": "next build && next export",
+    "generate-sitemap": "node sitemap-generator.js"
   },
   "author": "Telmo Goncalves <@telmo>",
   "license": "ISC",
   "dependencies": {
+    "@sergeymyssak/nextjs-sitemap": "^1.1.1",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "gray-matter": "^4.0.2",
