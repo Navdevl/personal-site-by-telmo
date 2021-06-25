@@ -138,7 +138,7 @@ function Layout({ children, isHomepage, secondaryPage }) {
 
             {children}
 
-            {secondaryPage && (
+            {(
               <div className="bottom-mobile-nav">
                 <Row>
                   <Col xs={6} />

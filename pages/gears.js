@@ -20,7 +20,7 @@ function Uses({ og }) {
 
         {USES.map(({ title, stack }) => (
           <ul className="uses-list" key={title}>
-            <li className="head">{title}</li>
+            <h2 className="main-h2">{title}</h2>
 
             {stack.map(({ name, description, link }) => (
               <li key={name}>
