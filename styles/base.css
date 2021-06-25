@@ -252,6 +252,7 @@ p {
   margin-bottom: 40px;
   font-size: 18px;
   color: var(--article-text-color);
+  overflow-wrap: break-word;
 }
 
 .writing-container > p:first-child::first-letter {
@@ -608,7 +609,7 @@ footer {
   }
 
   .main-h1 {
-    font-size: calc(6vw + 6vh);
+    font-size: calc(5vw + 4.5vh);
   }
 
   .hope-liked {
