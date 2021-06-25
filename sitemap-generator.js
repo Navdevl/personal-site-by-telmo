@@ -3,7 +3,8 @@ const { configureSitemap } = require('@sergeymyssak/nextjs-sitemap');
 
 async function getDynamicPaths() {
   var dir = './writings'
-  const data = fs.readdirSync(dir).filter(file => file.includes('.md'));
+  var data = fs.readdirSync(dir).filter(file => file.includes('.md'));
+  data = data.map((item) => item.replace('.md', ''))
   return data.map((item) => `/posts/${item}`);
 }
 
