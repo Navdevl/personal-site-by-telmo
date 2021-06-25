@@ -24,8 +24,6 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:site" content="@nav_devl" />
         <meta property="og:image" content={og ? og.image : `https://naveenhonestraj.in/og/default.png`} />
 
-        <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
-
         <title>{title || `Naveen Honest Raj | Backend Engineer - Specialized in Ruby on Rails | Writes about code, life and movies`}</title>
       </Head>
 
