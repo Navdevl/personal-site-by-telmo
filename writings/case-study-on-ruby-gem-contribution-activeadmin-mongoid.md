@@ -57,7 +57,9 @@ So, I took my time to read through the activeadmin gem and see for the class tha
 Studying the class `ActiveAdmin::Generators::InstallGenerator` [from here helped me](https://github.com/activeadmin/activeadmin/blob/master/lib/generators/active_admin/install/install_generator.rb#L5) to understand that the current class is the one which requires `activerecord` related files, but the parent class of this class doesn't requires any of those.
 
 So the solution I came up with was, to go change the parent class of `ActiveAdmin::Generators::InstallGenerator` to do the following:
+
 1. When a class subclasses from it, I need to change the way the subclass is described.
+
 2. Then either override the method definition or disallow it from overriding.
 
 ## self.inherited method
