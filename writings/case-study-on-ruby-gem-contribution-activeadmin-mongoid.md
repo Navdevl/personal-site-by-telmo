@@ -1,4 +1,3 @@
-
 ---
 title: "Case study on Ruby Gem Contribution: activeadmin-mongoid"
 date: "2021-06-25T00:00:00.00Z"
