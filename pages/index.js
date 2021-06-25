@@ -18,28 +18,23 @@ function About() {
           <div className="about-intro">
             <Row>
               <Col md={12}>
-                Coding was not something I learnt to do or was chosen out of the options I had, it was something I was comfortable doing. More than comfort there was one quality that moulded to be the person I am today, it was thirst to be better.
-                <br></br><br></br>
-                An introvert, confined to close circles, brainy, these are some of the words that became my identity during my school and college days. I was good in adapting to a coding language and picked up the technologies fast. I spent most of my leisure exploring the internet and learning whatever I could. I like reading and gaining knowledge from the broad world of internet in my personal space away from the crowd and their noise, but for my music and my beloved machine.
-                <br></br><br></br>
-                The people I looked upto inspired me in a lot of ways to become the better human I am today. They were the ones who guided me to pursue a career in what I loved doing most, coding!
+                <p>Coding was not something I learnt to do or was chosen out of the options I had, it was something I was comfortable doing. More than comfort there was one quality that moulded to be the person I am today, it was thirst to be better.</p>
+
+                <h3>What I've worked with so far</h3>
+
+                <Row style={{ marginTop: 30 }}>
+                  {PRESENT.map(s => (
+                    <Col md={2} xs={4} key={s} style={{ textAlign: 'center', marginBottom: 20 }}>
+                      <Icon type={s} />
+                      <div className="stack-name">{s}</div>
+                    </Col>
+                  ))}
+                </Row>
+                <p>An introvert, confined to close circles, brainy, these are some of the words that became my identity during my school and college days. I was good in adapting to a coding language and picked up the technologies fast. I spent most of my leisure exploring the internet and learning whatever I could. I like reading and gaining knowledge from the broad world of internet in my personal space away from the crowd and their noise, but for my music and my beloved machine.</p>
+
+                <p>The people I looked upto inspired me in a lot of ways to become the better human I am today. They were the ones who guided me to pursue a career in what I loved doing most, coding!</p>
               </Col>
             </Row>
-
-            <hr />
-
-            <h3>What I've worked with so far</h3>
-
-            <Row style={{ marginTop: 30 }}>
-              {PRESENT.map(s => (
-                <Col md={2} xs={4} key={s} style={{ textAlign: 'center', marginBottom: 40 }}>
-                  <Icon type={s} />
-                  <div className="stack-name">{s}</div>
-                </Col>
-              ))}
-            </Row>
-
-            <hr />
 
             Follow me on {' '}
             <a href="https://twitter.com/nav_devl" target="_blank" rel="noopener noreferrer nofollow">
