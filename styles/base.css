@@ -1,4 +1,3 @@
-@import url('https://use.typekit.net/cyw3eir.css');
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
@@ -90,7 +89,6 @@ body {
   border-radius: 5px;
   letter-spacing: -.5px;
   font-weight: 500;
-  /*font-family: ibm-plex-mono, Monaco, 'Lucida Console';*/
   transition: all .2s linear;
 }
 
@@ -261,7 +259,6 @@ p {
 }
 
 .writing-container *:not(pre) > code {
-  font-family: ibm-plex-mono, Monaco, 'Lucida Console';
   border: 1px var(--primary-color) dashed;
   color: var(--primary-color);
   padding: 4px 7px 7px;
@@ -397,7 +394,6 @@ footer {
   list-style: none;
   margin: 40px 0 80px;
   padding: 0;
-  /*font-family: ibm-plex-mono, Monaco, 'Lucida Console';*/
   font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
 }
@@ -444,7 +440,6 @@ footer {
 }
 
 .stack-name {
-  font-family: ibm-plex-mono, Monaco, 'Lucida Console';
   font-size: 13px;
   color: var(--text-color);
 }
@@ -628,53 +623,6 @@ footer {
   border: 1px var(--dark-grey) solid;
   padding: 30px 15px;
   border-radius: 5px;
-}
-
-.reviews-list {
-  list-style: none;
-  padding: 0;
-  font-family: ibm-plex-mono, Monaco, 'Lucida Console';
-  font-size: 16px;
-}
-
-.reviews-list li {
-  padding: 5px 0 25px;
-}
-
-.reviews-list a, .reviews-list .point {
-  color: var(--text-color);
-  font-weight: 600;
-  margin-right: 10px;
-  text-decoration: none;
-  display: block;
-}
-
-.reviews-what-to-do {
-  font-family: ibm-plex-mono, Monaco, 'Lucida Console';
-  font-weight: 600;
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: var(--primary-color);
-  display: inline-block;
-}
-
-.happy-coding {
-  margin-top: 50px;
-}
-
-.happy-coding span {
-  display: block;
-}
-
-.happy-coding span:first-child {
-  font-family: ibm-plex-mono, Monaco, 'Lucida Console';
-  font-weight: 600;
-}
-
-.happy-coding span:last-child {
-  font-family: Kalam;
-  font-size: 30px;
-  margin-top: 20px;
 }
 
 .reading-time {
