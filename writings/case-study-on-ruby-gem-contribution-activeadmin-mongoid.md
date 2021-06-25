@@ -1,3 +1,4 @@
+
 ---
 title: "Case study on Ruby Gem Contribution: activeadmin-mongoid"
 date: "2021-06-25T00:00:00.00Z"
@@ -65,10 +66,21 @@ So the solution I came up with was, to go change the parent class of `ActiveAdmi
 ## self.inherited method
 Ruby has a wonderful hook on class called `inherited` which will be called when a class is used by another class to derive itself. Using that `inherited` you can control specific way of the derived class. Cool, isn't it? I even tweeted about it here https://twitter.com/nav_devl/status/1405329547701096452
 
+The only caveat with the idea I had was, I assumed when the self.inherited was called, the subclass will be fully defined and I can just remove/override the definition of `create_migrations` method. But turns out, when the self.inherited was called, there are no user defined methods are present. 😔
+
+## self.method_added
+Again, Ruby as charming as always, provides us with a hook called `method_added` and this is called every time a new method method definition is added to a class. Now can you see where we are heading towards?
+
+So we are going to combine the advantage of  `self.inherited` and `self.method_added` 🤯
+
+
 ## Moving with solving
-So, now our goal is very simple.
+So, now our next set of action is very simple.
 - Define an empty `create_migrations` in the parent class.
-- When a class is derived from it, and if the derived class's name is `ActiveAdmin::Generators::InstallGenerator` then do not allow it to create an overridden version `create_migrations` method.
+- When a class is derived from it, we are redefining the `self.method_added`'s definition. Classy, right? 😎
+- So, if the derived class's name is `ActiveAdmin::Generators::InstallGenerator` we are redefining the `self.method_added` of that subclass to remove the method definition of `create_migration` 
+- `remove_method` will remove only the method definition scoped to that class, so our derived class will now lookup to parent class for definition when `create_migration` is called.
+- And we have an empty NO ACTION definition in our parent class.
 - **No activerecord related items** are required while doing this.
 - Bam! 🎉🎉
 
