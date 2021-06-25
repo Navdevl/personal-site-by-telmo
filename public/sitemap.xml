@@ -5,55 +5,55 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://naveenhonestraj.in/blog/</loc>
+        <loc>https://naveenhonestraj.in/blog</loc>
         <lastmod>2021-06-25</lastmod>
     </url>
     <url>
-        <loc>https://naveenhonestraj.in/gears/</loc>
+        <loc>https://naveenhonestraj.in/gears</loc>
         <lastmod>2021-06-25</lastmod>
     </url>
     <url>
-        <loc>https://naveenhonestraj.in/</loc>
+        <loc>https://naveenhonestraj.in</loc>
         <lastmod>2021-06-25</lastmod>
     </url>
     <url>
-        <loc>https://naveenhonestraj.in/posts/creating-an-incoming-email-server-and-sending-data/</loc>
-        <lastmod>2021-06-25</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://naveenhonestraj.in/posts/google-app-script-getting-started/</loc>
+        <loc>https://naveenhonestraj.in/posts/creating-an-incoming-email-server-and-sending-data</loc>
         <lastmod>2021-06-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://naveenhonestraj.in/posts/it-is-okay-for-movies-to-be-bad/</loc>
+        <loc>https://naveenhonestraj.in/posts/google-app-script-getting-started</loc>
         <lastmod>2021-06-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://naveenhonestraj.in/posts/just-a-random-thoughts-1/</loc>
+        <loc>https://naveenhonestraj.in/posts/it-is-okay-for-movies-to-be-bad</loc>
         <lastmod>2021-06-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://naveenhonestraj.in/posts/notes-on-road-less-travelled-book-wip/</loc>
+        <loc>https://naveenhonestraj.in/posts/just-a-random-thoughts-1</loc>
         <lastmod>2021-06-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://naveenhonestraj.in/posts/solving-the-problem-with-cte/</loc>
+        <loc>https://naveenhonestraj.in/posts/notes-on-road-less-travelled-book-wip</loc>
         <lastmod>2021-06-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://naveenhonestraj.in/posts/to-all-those-under-appreciated-successful-people/</loc>
+        <loc>https://naveenhonestraj.in/posts/solving-the-problem-with-cte</loc>
+        <lastmod>2021-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://naveenhonestraj.in/posts/to-all-those-under-appreciated-successful-people</loc>
         <lastmod>2021-06-25</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>

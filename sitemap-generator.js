@@ -20,7 +20,7 @@ getDynamicPaths().then((paths) => {
         changefreq: 'daily',
       },
     },
-    isTrailingSlashRequired: true,
+    isTrailingSlashRequired: false,
     targetDirectory: __dirname + '/public',
     pagesDirectory: __dirname + '/pages',
   });
