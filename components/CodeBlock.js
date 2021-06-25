@@ -12,7 +12,8 @@ const preStyle = {
 const codeProps = {
   style: {
     fontFamily: `ibm-plex-mono, Consolas, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New'`,
-    fontSize: '18.5px'
+    fontSize: '14.5px',
+    fontWeight: 800
   }
 }
 

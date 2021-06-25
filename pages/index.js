@@ -36,10 +36,10 @@ function About() {
               </Col>
             </Row>
 
-            Follow me on {' '}
+            <p className="special">Follow me on {' '}
             <a href="https://twitter.com/nav_devl" target="_blank" rel="noopener noreferrer nofollow">
               Twitter
-            </a>. That's where I usually hangout.
+            </a>. That's where I usually hangout.</p>
           </div>
         </div>
       </Layout>
