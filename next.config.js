@@ -1,6 +1,7 @@
 const withSass = require('@zeit/next-sass');
 const withCSS = require('@zeit/next-css');
 const withTM = require('next-transpile-modules');
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = withCSS(
 	withSass(
@@ -14,6 +15,8 @@ module.exports = withCSS(
 		      test: /\.md$/,
 		      use: 'raw-loader',
 		    })
+				config.optimization.minimizer = [];
+				config.optimization.minimizer.push(new OptimizeCSSAssetsPlugin({}));
 		    return config
 		  },
 		})
