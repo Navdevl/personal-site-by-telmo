@@ -1,4 +1,3 @@
-const withSass = require('@zeit/next-sass');
 const withCSS = require('@zeit/next-css');
 const withTM = require('next-transpile-modules');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
