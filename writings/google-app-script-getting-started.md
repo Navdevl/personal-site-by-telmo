@@ -40,7 +40,7 @@ You can brush your JS skills in the following sites. The scope of our article wi
 
 [Intro to Javascript by Udemy](https://www.udacity.com/course/intro-to-javascript–ud803)
 
-These courses also cover the ES6 part of Javascript. But Google is not yet released any support to ES6, so you can’t type ES6 stuffs on the [script.google.com](script.google.com) (Although there are few workarounds, that aren’t covered in our topic)
+These courses also cover the ES6 part of Javascript. But Google is not yet released any support to ES6, so you can’t type ES6 stuffs on the [script.google.com](https://script.google.com) (Although there are few workarounds, that aren’t covered in our topic)
 
 ## Starting with the Basics
 We are going to create a Sheets app that will fetch an API and fill our sheets.
