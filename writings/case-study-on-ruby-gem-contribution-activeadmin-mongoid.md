@@ -104,3 +104,6 @@ So, now our next set of action is very simple.
 
 ![Pull request on the activeadmin-mongoid repo](../../static/media/activeadmin-mongoid-pr-screenshot.png)
 This is my implementation and the PR is here (https://github.com/activeadmin/activeadmin-mongoid/pull/164) It is yet to be merged. 2/3 reviewer approved and hopefully I think it gets approved and merged. 
+
+
+EDIT: The PR is merged finally 🎉🎉
