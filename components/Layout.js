@@ -12,15 +12,23 @@ const menu = [
   {
     path: '/',
     name: 'About me',
+    target: '_self',
   },
   {
     path: '/blog',
     name: 'Blog',
+    target: '_self',
   },
   {
     path: '/gears',
     name: 'Gears',
+    target: '_self',
   },
+  {
+    path: 'https://drive.google.com/file/d/1cZqU5jDKdtLYUIO2gC7UnXFzCqqbGY7r/view?usp=sharing',
+    name: 'Resume',
+    target: '_blank',
+  }
 ]
 const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2']
 const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/nav_devl&w=150`
@@ -103,10 +111,10 @@ function Layout({ children, isHomepage, secondaryPage }) {
                 </Link>
               </li>
 
-              {menu.map(({ path, name }) => (
+              {menu.map(({ path, name, target }) => (
                 <li key={name}>
                   <Link href={path} as={path}>
-                    <a>{name}</a>
+                    <a target={target}>{name}</a>
                   </Link>
                 </li>
               ))}
