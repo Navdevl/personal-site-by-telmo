@@ -1,6 +1,6 @@
 ---
 title: "Make the instance of my class to be concatenatable with string"
-date: "2021-07-25T00:00:00.00Z"
+date: "2021-05-25T00:00:00.00Z"
 og:
   description: "Rubyists approach to make the instance of a custom class to be concatenatable with another string or string based object"
   image: "https://naveenhonestraj.in/og/instance-concat.png"

@@ -25,13 +25,13 @@ const menu = [
     target: '_self',
   },
   {
-    path: 'https://drive.google.com/file/d/1cZqU5jDKdtLYUIO2gC7UnXFzCqqbGY7r/view?usp=sharing',
+    path: 'https://drive.google.com/file/d/1QRSdNKwdm2-XFfB4A0UQCOfpm0emY0Me/view?usp=sharing',
     name: 'Resume',
     target: '_blank',
   }
 ]
 const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2']
-const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/nav_devl&w=150`
+const avatar = `https://pbs.twimg.com/profile_images/1543847063771058176/__nwiGAS_400x400.jpg`
 const SALUTS = [
   'Hey you.',
   'Welcome.',
@@ -76,8 +76,8 @@ function Layout({ children, isHomepage, secondaryPage }) {
 
     if (onLoadTheme) return
 
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme('dark')
+    if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+      setTheme('light')
     }
   }, [])
 
