@@ -1,10 +1,14 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
-import '../styles/base.css'
+import '../styles/base.css';
 
 function MyApp({ Component, pageProps }) {
   const og = pageProps.data?.og
   const title = pageProps.data?.title
+  const baseUrl = "https://naveenhonestraj.in"
+  const ogGenPrefix = "http://mosaic.applikuapp.com/image/get_image?url="
+  const { asPath, pathname } = useRouter();
 
   return (
     <>
@@ -20,14 +24,14 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:title" content={title || `Naveen Honest Raj | Backend Engineer - Specialized in Ruby on Rails | Writes about code, life and movies`} />
         <meta property="og:site_name" content="Naveen Honest Raj | Backend Engineer - Specialized in Ruby on Rails" />
         <meta property="og:description" content={og ? og.description : `Naveen Honest Raj K is a backend engineer from India, who loves to talk about code, life and movies. Most other times, he just stares at the sky and hum to an old song.`} />
-        
+
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:site" content="@nav_devl" />
         <meta property="twitter:title" content={title || `Naveen Honest Raj | Backend Engineer - Specialized in Ruby on Rails | Writes about code, life and movies`} />
         <meta property="twitter:description" content={og ? og.description : `Naveen Honest Raj K is a backend engineer from India, who loves to talk about code, life and movies. Most other times, he just stares at the sky and hum to an old song.`} />
-        <meta property="twitter:image" content={og ? og.image : `https://naveenhonestraj.in/og/default.png`} />
+        <meta property="twitter:image" content={`${ogGenPrefix}${baseUrl}${pathname}`} />
 
-        <meta property="og:image" content={og ? og.image : `https://naveenhonestraj.in/og/default.png`} />
+        <meta property="og:image" content={`${ogGenPrefix}${baseUrl}${pathname}`} />
 
         <title>{title || `Naveen Honest Raj | Backend Engineer - Specialized in Ruby on Rails | Writes about code, life and movies`}</title>
       </Head>
