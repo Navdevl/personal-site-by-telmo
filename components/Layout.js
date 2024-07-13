@@ -31,7 +31,7 @@ const menu = [
   }
 ]
 const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2']
-const avatar = `https://pbs.twimg.com/profile_images/1543847063771058176/__nwiGAS_400x400.jpg`
+const avatar = `https://pbs.twimg.com/profile_images/1748095719825936384/AKzsafhY_x96.jpg`
 const SALUTS = [
   'Hey you.',
   'Welcome.',

@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-
-
 import '../styles/base.css';
 
 function MyApp({ Component, pageProps }) {
