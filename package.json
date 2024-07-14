@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A tale of code & design",
   "main": "index.js",
+  "engines": {
+    "node": "^18"
+  },
   "scripts": {
     "dev": "next",
     "build": "node sitemap-generator.js && next build",
