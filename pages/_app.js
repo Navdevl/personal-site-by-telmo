@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   const og = pageProps.data?.og
   const title = pageProps.data?.title
   const baseUrl = "https://naveenhonestraj.in"
-  const ogGenPrefix = "http://5.161.75.212/image/get_image?url="
+  const ogGenPrefix = "https://get.mosaicimg.com/image/get_image?url="
   const { asPath, pathname } = useRouter();
 
   return (
