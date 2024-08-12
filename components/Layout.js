@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react'
-import { Grid, Row, Col } from 'react-flexbox-grid'
-import { Sun, Moon } from 'react-feather'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import React, { useEffect, useState } from 'react'
+import { Moon, Sun } from 'react-feather'
+import { Col, Grid, Row } from 'react-flexbox-grid'
 
 import { currentDayName } from '../utils/dateUtils'
 
-import BlackLivesMatter from './BlackLivesMatter'
 
 const menu = [
   {
@@ -25,7 +24,7 @@ const menu = [
     target: '_self',
   },
   {
-    path: 'https://drive.google.com/file/d/1QRSdNKwdm2-XFfB4A0UQCOfpm0emY0Me/view?usp=sharing',
+    path: 'https://drive.google.com/file/d/1GzCp3vJhYOvrdmZFy5ZFfPgiqsW-7f6k/view?usp=sharing',
     name: 'Resume',
     target: '_blank',
   }
