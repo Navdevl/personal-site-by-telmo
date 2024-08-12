@@ -2,7 +2,7 @@
 title: "How to do near-zero downtime deployment"
 date: "2024-07-25T00:00:00.00Z"
 og:
-  description: "While I am working for Mosaic with the team, I loved doing dirty engineering things on our own. And one of such thing is to deploy our backend application (which takes a good amount of preloading time) without any downtime. We’ve got used to most out-of-the-box solutions like Heroku, Fly, or Appliku, but we want to get this straight this time."
+  description: "While I am working for Mosaic with the team, I loved doing dirty engineering things on our own. And one of such thing is to deploy our backend application (which takes a good amount of preloading time) without any downtime."
   image: "https://naveenhonestraj.in/static/media/activeadmin-mongoid-og.png"
 author:
   twitter: "nav_devl"
